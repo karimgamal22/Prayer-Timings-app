@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@300;500;900&display=swap"
+    rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>مواقيت الصلاة</title>
+</head>
+
+<body style="direction: rtl">
+  <div class="app">
+    <div>
+      <div style="color: #fff; margin-right: 40px; margin-top: 20px">
+        <h1 class="city_name">الرياض</h1>
+        <h6 class="data_day" id="data_day">الجمعة 24 نوفمبر</h6>
+      </div>
+    </div>
+    <hr style="margin: 0 40px; border-color: #5200e1" />
+
+    <div class="cardsall" style="height: 250px; margin-top: 50px">
+      <div class="card">
+        <div class="header">
+          <h1>الفجر</h1>
+        </div>
+        <div class="body">
+          <h1 class="time" style="font-size: 50px" id="fajr_time"></h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header">
+          <h1>الشروق</h1>
+        </div>
+        <div class="body">
+          <h1 class="time" style="font-size: 50px" id="Sunrise_time"></h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header">
+          <h1>الظهر</h1>
+        </div>
+        <div class="body">
+          <h1 class="time" style="font-size: 50px" id="Dhuhr_time"></h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header">
+          <h1>العصر</h1>
+        </div>
+        <div class="body">
+          <h1 class="time" style="font-size: 50px" id="Asr_time"></h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header">
+          <h1>المغرب</h1>
+        </div>
+        <div class="body">
+          <h1 class="time" style="font-size: 50px" id="Maghrib_time"></h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="header">
+          <h1>العشاء</h1>
+        </div>
+        <div class="body">
+          <h1 class="time" style="font-size: 50px" id="Isha_time"></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- select city -->
+    <div class="center" style="margin-top: 120px;">
+      <select class="cities_select" id="cities_select" style="
+            width: 300px;
+            height: 35px;
+            font-size: 25px;
+            font-family: 'Tajawal', sans-serif;
+            border-radius: 30px;
+            outline: none;
+            border:2px gray #5200e1;
+           background: none;
+           color: white;
+            
+          ">
+
+      </select>
+    </div>
+    <!-- select city -->
+  </div>
+  <script src="node_modules/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
